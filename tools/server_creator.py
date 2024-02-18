@@ -1,5 +1,6 @@
 import json
-from adaptiveui import ui
+
+# from adaptiveui import ui
 from tkinter import messagebox
 
 from import_o import ask, get_attribute, objects
@@ -169,9 +170,9 @@ def create_server_gui():
 
 if __name__ == "__main__":
     servers = read("servers.json")
-    create_server_gui()
-    # try:
-    #    servers = [create_server() for _ in range(100)]
-    # except KeyboardInterrupt:
-    #    print("\n\nSaving and Exiting...")
-    # write("servers.json", servers)
+    # create_server_gui()
+    try:
+        nservers = [create_server() for _ in range(100)]
+    except KeyboardInterrupt:
+        print("\n\nSaving and Exiting...")
+    write("servers.json", servers + nservers)

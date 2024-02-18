@@ -1,5 +1,6 @@
 import json
-from adaptiveui import ui
+
+# from adaptiveui import ui
 from tkinter import messagebox
 
 from import_o import ask, get_attribute, objects
@@ -179,9 +180,9 @@ def create_job_gui():
 
 if __name__ == "__main__":
     jobs = read("jobs.json")
-    create_job_gui()
-    # try:
-    #    njobs = [create_job() for _ in range(100)]
-    # except KeyboardInterrupt:
-    #    print("\n\nSaving and Exiting...")
-    # write("jobs.json", jobs + njobs)
+    # create_job_gui()
+    try:
+        njobs = [create_job() for _ in range(100)]
+    except KeyboardInterrupt:
+        print("\n\nSaving and Exiting...")
+    write("jobs.json", jobs + njobs)
