@@ -1,0 +1,74 @@
+[
+    {
+        "name": "Candles In",
+        "min_height": "VERY_SHORT",
+        "min_stamina": "LOW",
+        "senior_required": false,
+        "younger_required": true,
+        "older_required": false,
+        "requires_pair": true
+    },
+    {
+        "name": "Candles Out",
+        "min_height": "VERY_SHORT",
+        "min_stamina": "LOW",
+        "senior_required": false,
+        "younger_required": true,
+        "older_required": false,
+        "requires_pair": true
+    },
+    {
+        "name": "Candles Gospel",
+        "min_height": "SHORT",
+        "min_stamina": "MEDIUM",
+        "senior_required": false,
+        "younger_required": false,
+        "older_required": false,
+        "requires_pair": true
+    },
+    {
+        "name": "Candles Offertory",
+        "min_height": "SHORT",
+        "min_stamina": "MEDIUM",
+        "senior_required": false,
+        "younger_required": false,
+        "older_required": false,
+        "requires_pair": true
+    },
+    {
+        "name": "Candles Consecration",
+        "min_height": "SHORT",
+        "min_stamina": "MEDIUM",
+        "senior_required": false,
+        "younger_required": false,
+        "older_required": true,
+        "requires_pair": true
+    },
+    {
+        "name": "Candles Communion",
+        "min_height": "SHORT",
+        "min_stamina": "MEDIUM",
+        "senior_required": false,
+        "younger_required": false,
+        "older_required": true,
+        "requires_pair": true
+    },
+    {
+        "name": "Water & Wine",
+        "min_height": "SHORT",
+        "min_stamina": "LOW",
+        "senior_required": false,
+        "younger_required": true,
+        "older_required": false,
+        "requires_pair": true
+    },
+    {
+        "name": "Cross",
+        "min_height": "MEDIUM",
+        "min_stamina": "LOW",
+        "senior_required": false,
+        "younger_required": false,
+        "older_required": true,
+        "requires_pair": false
+    }
+]

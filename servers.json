@@ -1,0 +1,90 @@
+[
+    {
+        "name": "Bevyn",
+        "height": "TALL",
+        "stamina": "HIGH",
+        "is_senior": true,
+        "is_young": false,
+        "is_older": true
+    },
+    {
+        "name": "Harry",
+        "height": "TALL",
+        "stamina": "HIGH",
+        "is_senior": true,
+        "is_young": false,
+        "is_older": true
+    },
+    {
+        "name": "Thomas",
+        "height": "MEDIUM",
+        "stamina": "HIGH",
+        "is_senior": true,
+        "is_young": false,
+        "is_older": true
+    },
+    {
+        "name": "Kaitlyn",
+        "height": "MEDIUM",
+        "stamina": "HIGH",
+        "is_senior": false,
+        "is_young": false,
+        "is_older": true
+    },
+    {
+        "name": "Alryk",
+        "height": "MEDIUM",
+        "stamina": "HIGH",
+        "is_senior": false,
+        "is_young": false,
+        "is_older": true
+    },
+    {
+        "name": "Daniel",
+        "height": "SHORT",
+        "stamina": "HIGH",
+        "is_senior": false,
+        "is_young": false,
+        "is_older": true
+    },
+    {
+        "name": "Annabel",
+        "height": "MEDIUM",
+        "stamina": "HIGH",
+        "is_senior": false,
+        "is_young": false,
+        "is_older": true
+    },
+    {
+        "name": "Leo",
+        "height": "MEDIUM",
+        "stamina": "HIGH",
+        "is_senior": true,
+        "is_young": false,
+        "is_older": true
+    },
+    {
+        "name": "Clara",
+        "height": "SHORT",
+        "stamina": "HIGH",
+        "is_senior": false,
+        "is_young": false,
+        "is_older": true
+    },
+    {
+        "name": "Sophie",
+        "height": "VERY_SHORT",
+        "stamina": "LOW",
+        "is_senior": false,
+        "is_young": true,
+        "is_older": false
+    },
+    {
+        "name": "Khloe",
+        "height": "VERY_SHORT",
+        "stamina": "LOW",
+        "is_senior": false,
+        "is_young": true,
+        "is_older": false
+    }
+]
