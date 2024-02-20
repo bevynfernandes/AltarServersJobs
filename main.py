@@ -231,6 +231,9 @@ def logic(servers: list[Server], job: Job) -> Suggestion:
     if SHUFFLE:
         shuffle(servers)
 
+    # Prioritize servers that are not currently doing any jobs
+    servers.sort(key=lambda server: server.jobs_doing)
+
     for server in servers:
         if server.jobs_doing == 0 and (not server.is_senior or job.senior_required):
             suggest.add_server(server, "Not doing any jobs and (not senior or senior required)")
