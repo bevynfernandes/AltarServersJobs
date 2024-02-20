@@ -253,7 +253,7 @@ def logic(servers: list[Server], job: Job) -> Suggestion:
             and server.is_older
         ):
             suggest.move_server(server, "min", "med", "Meets age requirement")
-        if server.jobs_doing >= MAX_JOBS:
+        if server.jobs_doing >= MAX_JOBS and not (job.younger_required and server.is_young):
             suggest.remove_server(server, f"Doing more than {MAX_JOBS} jobs")
 
     if job.requires_pair:
@@ -323,5 +323,5 @@ def find_complete():
     
 
 if __name__ == "__main__":
-    find_complete()
-    #main()
+    #find_complete()
+    main()
