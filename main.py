@@ -153,13 +153,15 @@ class Suggestion:
 
     def pair(self, store: bool = True):
         """
-        Finds a pair of servers that are most similar based on their attributes.
+        Pair the altar servers based on their height and stamina values using the Euclidean distance formula.
 
         Args:
-            store (bool, optional): Whether to store the pair of servers in the `pair_suggest` attribute. Defaults to True.
+            store (bool, optional): Indicates whether to store the suggested pair in the object's `suggested` attribute. 
+                Defaults to True.
 
         Returns:
-            tuple[Server] | list: The pair of servers if `store` is False, otherwise an empty list.
+            tuple or list: If `store` is False, returns the most similar pair of altar servers as a tuple. 
+                If `store` is True, updates the `suggested` attribute with the most similar pair and returns an empty list.
         """
         for list_name in ("min", "med", "max"):
             people = self._suggestions[list_name]
@@ -220,10 +222,10 @@ def logic(servers: list[Server], job: Job) -> Suggestion:
 
     Args:
         servers (list[Server]): A list of Server objects representing available servers.
-        job (Job): A Job object representing the job to be assigned.
+        job (Job): The Job object representing the job to be assigned.
 
     Returns:
-        Suggestion: A Suggestion object containing the suggested server(s) for the job.
+        Suggestion: The suggested server(s) for the job.
 
     """
     suggest = Suggestion(job.name)
@@ -253,6 +255,8 @@ def logic(servers: list[Server], job: Job) -> Suggestion:
             and server.is_older
         ):
             suggest.move_server(server, "min", "med", "Meets age requirement")
+        if job.younger_required and not server.is_young:
+            suggest.remove_server(server, "Not a younger server")
         if server.jobs_doing >= MAX_JOBS and not (job.younger_required and server.is_young):
             suggest.remove_server(server, f"Doing more than {MAX_JOBS} jobs")
 
@@ -275,6 +279,7 @@ def main():
         not_doing (int): The number of servers that are not assigned any jobs.
     """
     global MAX_JOBS
+    global MPRINT
     servers: list[Server] = read("servers.json", Server)
     jobs: list[Job] = read("jobs.json", Job)
 
