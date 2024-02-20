@@ -86,5 +86,21 @@
         "is_senior": false,
         "is_young": true,
         "is_older": false
+    },
+    {
+        "name": "Isiah",
+        "height": "SHORT",
+        "stamina": "MEDIUM",
+        "is_senior": false,
+        "is_young": true,
+        "is_older": false
+    },
+    {
+        "name": "Alba",
+        "height": "MEDIUM",
+        "stamina": "HIGH",
+        "is_senior": false,
+        "is_young": false,
+        "is_older": true
     }
 ]

@@ -63,10 +63,28 @@
         "requires_pair": true
     },
     {
+        "name": "Bells",
+        "min_height": "VERY_SHORT",
+        "min_stamina": "LOW",
+        "senior_required": false,
+        "younger_required": true,
+        "older_required": false,
+        "requires_pair": false
+    },
+    {
         "name": "Cross",
         "min_height": "MEDIUM",
         "min_stamina": "LOW",
         "senior_required": true,
+        "younger_required": false,
+        "older_required": true,
+        "requires_pair": false
+    },
+    {
+        "name": "Book",
+        "min_height": "MEDIUM",
+        "min_stamina": "MEDIUM",
+        "senior_required": false,
         "younger_required": false,
         "older_required": true,
         "requires_pair": false
