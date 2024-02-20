@@ -55,7 +55,7 @@
     },
     {
         "name": "Water & Wine",
-        "min_height": "SHORT",
+        "min_height": "VERY_SHORT",
         "min_stamina": "LOW",
         "senior_required": false,
         "younger_required": true,
@@ -66,7 +66,7 @@
         "name": "Cross",
         "min_height": "MEDIUM",
         "min_stamina": "LOW",
-        "senior_required": false,
+        "senior_required": true,
         "younger_required": false,
         "older_required": true,
         "requires_pair": false
