@@ -4,7 +4,7 @@
         "min_height": "VERY_SHORT",
         "min_stamina": "LOW",
         "senior_required": false,
-        "younger_required": true,
+        "younger_required": 0,
         "older_required": false,
         "requires_pair": true
     },
@@ -13,16 +13,16 @@
         "min_height": "VERY_SHORT",
         "min_stamina": "LOW",
         "senior_required": false,
-        "younger_required": true,
+        "younger_required": 0,
         "older_required": false,
         "requires_pair": true
     },
     {
         "name": "Candles Gospel",
-        "min_height": "SHORT",
+        "min_height": "VERY_SHORT",
         "min_stamina": "MEDIUM",
         "senior_required": false,
-        "younger_required": false,
+        "younger_required": 0,
         "older_required": false,
         "requires_pair": true
     },
@@ -31,7 +31,7 @@
         "min_height": "SHORT",
         "min_stamina": "MEDIUM",
         "senior_required": false,
-        "younger_required": false,
+        "younger_required": 0,
         "older_required": false,
         "requires_pair": true
     },
@@ -40,7 +40,7 @@
         "min_height": "SHORT",
         "min_stamina": "MEDIUM",
         "senior_required": false,
-        "younger_required": false,
+        "younger_required": 0,
         "older_required": true,
         "requires_pair": true
     },
@@ -49,16 +49,16 @@
         "min_height": "SHORT",
         "min_stamina": "MEDIUM",
         "senior_required": false,
-        "younger_required": false,
+        "younger_required": 0,
         "older_required": true,
         "requires_pair": true
     },
     {
         "name": "Water & Wine",
-        "min_height": "VERY_SHORT",
-        "min_stamina": "LOW",
+        "min_height": "NONE",
+        "min_stamina": "NONE",
         "senior_required": false,
-        "younger_required": true,
+        "younger_required": 2,
         "older_required": false,
         "requires_pair": true
     },
@@ -67,7 +67,7 @@
         "min_height": "VERY_SHORT",
         "min_stamina": "LOW",
         "senior_required": false,
-        "younger_required": true,
+        "younger_required": 1,
         "older_required": false,
         "requires_pair": false
     },
@@ -76,7 +76,7 @@
         "min_height": "MEDIUM",
         "min_stamina": "LOW",
         "senior_required": true,
-        "younger_required": false,
+        "younger_required": 0,
         "older_required": true,
         "requires_pair": false
     },
@@ -85,7 +85,7 @@
         "min_height": "MEDIUM",
         "min_stamina": "MEDIUM",
         "senior_required": false,
-        "younger_required": false,
+        "younger_required": 0,
         "older_required": true,
         "requires_pair": false
     }

@@ -33,7 +33,7 @@
     },
     {
         "name": "Alryk",
-        "height": "MEDIUM",
+        "height": "SHORT",
         "stamina": "HIGH",
         "is_senior": false,
         "is_young": false,
@@ -74,7 +74,7 @@
     {
         "name": "Sophie",
         "height": "VERY_SHORT",
-        "stamina": "LOW",
+        "stamina": "MEDIUM",
         "is_senior": false,
         "is_young": true,
         "is_older": false
@@ -82,7 +82,7 @@
     {
         "name": "Khloe",
         "height": "VERY_SHORT",
-        "stamina": "LOW",
+        "stamina": "MEDIUM",
         "is_senior": false,
         "is_young": true,
         "is_older": false
