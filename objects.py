@@ -14,12 +14,14 @@ class Height(Enum):
         MEDIUM (int): Represents medium height (3).
         SHORT (int): Represents short height (2).
         VERY_SHORT (int): Represents very short height (1).
+        NONE (int): Represents no height (0).
     """
 
     TALL = 4
     MEDIUM = 3
     SHORT = 2
     VERY_SHORT = 1
+    NONE = 0
 
 
 class Stamina(Enum):
@@ -30,11 +32,13 @@ class Stamina(Enum):
         HIGH (int): The highest stamina level.
         MEDIUM (int): The medium stamina level.
         LOW (int): The lowest stamina level.
+        NONE (int): No stamina level.
     """
 
     HIGH = 3
     MEDIUM = 2
     LOW = 1
+    NONE = 0
 
 
 @dataclass(slots=True)
@@ -92,6 +96,9 @@ class Server:
         data["height"] = Height[data["height"]]
         data["stamina"] = Stamina[data["stamina"]]
         return cls(**data)
+
+    def __hash__(self):
+        return hash(self.name)
 
 
 @dataclass(slots=True)
